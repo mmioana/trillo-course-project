@@ -60,7 +60,8 @@ body {
 .gallery {
   display: flex; }
   .gallery__photo {
-    width: 100%; }
+    width: 100%;
+    display: block; }
 
 .hotel-view {
   background-color: #fff;
@@ -76,6 +77,16 @@ body {
 .logo {
   height: 3.25rem;
   margin-left: 2rem; }
+
+.overview {
+  display: flex;
+  align-items: center; }
+  .overview__stars {
+    margin-right: auto; }
+  .overview__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary); }
 
 .search {
   flex: 0 0 40%;
