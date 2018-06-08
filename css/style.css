@@ -370,7 +370,10 @@ body {
   justify-content: space-between; }
 
 .user-reviews {
-  flex: 1; }
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .content {
   display: flex; }
@@ -385,8 +388,13 @@ body {
   background-color: transparent;
   cursor: pointer;
   transition: all .2s; }
+  .btn-inline span {
+    margin-left: .3rem;
+    transition: all .2s; }
   .btn-inline:hover {
     color: var(--color-grey-dark-1); }
+    .btn-inline:hover span {
+      margin-left: 1rem; }
   .btn-inline:focus {
     outline: none;
     animation: pulsate 1s infinite; }
