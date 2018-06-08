@@ -4,4 +4,14 @@
   margin-right: 4.5rem;
   box-shadow: var(--shadow-light);
   padding: 3rem;
+
+  @include respond(bp-larger) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @include respond(bp-medium) {
+   margin-right: 0;
+    margin-bottom: 3rem;
+  }
 }

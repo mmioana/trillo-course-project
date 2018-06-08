@@ -4,11 +4,28 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @include respond(bp-larger) {
+    display: flex;
+    margin: 0;
+  }
+
+  @include respond(bp-small) {
+    flex-direction: column;
+  }
+
   &__item {
     position: relative;
 
+    @include respond(bp-larger) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: .5rem;
+
+      @include respond(bp-larger) {
+        margin-bottom: 0;
+      }
     }
 
     &::before {
@@ -48,6 +65,15 @@
 
       display: flex;
       align-items: center;
+
+      @include respond(bp-larger) {
+        justify-content: center;
+        padding: 2rem;
+      }
+
+      @include respond(bp-medium) {
+        flex-direction: column;
+      }
     }
   }
 
@@ -56,6 +82,11 @@
     width: 1.75rem;
     fill: currentColor;
     margin-right: 2rem;
+
+    @include respond(bp-medium) {
+      margin-right: 0;
+      margin-bottom: .7rem;
+    }
   }
 
   &__text {

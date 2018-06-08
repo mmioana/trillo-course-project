@@ -1,18 +1,28 @@
 // media query manager
 @mixin respond($device) {
-  @if $device==phone {
-    @media only screen and (max-width: 37.5em) {
-      $content;
+  @if $device==bp-small {
+    @media only screen and (max-width: 21.875em) { //350px
+      @content;
     }
   }
-  @if $device==tab-port {
-    @media only screen and (max-width: 56.25em) {
-      $content;
+  @if $device==bp-s {
+    @media only screen and (max-width: 31.25em) { //500px
+      @content;
     }
   }
-  @if $device==tab-land {
-    @media only screen and (max-width: 75em) {
-      $content;
+  @if $device==bp-medium {
+    @media only screen and (max-width: 37.5em) { //600px
+      @content;
+    }
+  }
+  @if $device==bp-larger {
+    @media only screen and (max-width: 56.25em) { //900
+      @content;
+    }
+  }
+  @if $device==bp-largest {
+    @media only screen and (max-width: 75em) { //1200
+      @content;
     }
   }
 }

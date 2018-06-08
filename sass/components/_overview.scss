@@ -9,6 +9,11 @@
     text-transform: uppercase;
     letter-spacing: .1rem;
     padding: 1.5rem 3rem;
+
+    @include respond(bp-medium) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -45,16 +50,27 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include respond(bp-medium) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-avg {
     font-size: 2.25rem;
     font-weight: 300;
     margin-bottom: -3px;
+
+    @include respond(bp-medium) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: .8rem;
     text-transform: uppercase;
+    @include respond(bp-medium) {
+      font-size: .5rem;
+    }
   }
 }

@@ -5,6 +5,12 @@
   align-items: center;
   justify-content: center;
 
+  @include respond(bp-s) {
+    order: 1;
+    flex: 0 0 100%;
+
+  }
+
   &__icon {
     height: 2rem;
     width: 2rem;

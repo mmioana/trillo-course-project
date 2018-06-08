@@ -6,4 +6,10 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.4rem;
+
+  @include respond(bp-s) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-items: space-around;
+  }
 }

@@ -37,6 +37,10 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; // 16px -> 100%, 10px -> 62.5%
+
+  @include respond(bp-larger) {
+    font-size: 50%; // 16px -> 100%, 8px -> 50%;
+  }
 }
 
 body {
